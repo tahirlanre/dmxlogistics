@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <title>
+    DMX Logistics - Home
+  </title>
+
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Montserrat:300,400,500,600' rel='stylesheet'
+    type='text/css'>
+  <link href="assets/css/toolkit-startup.css" rel="stylesheet">
+  <link href="assets/css/application-startup.css" rel="stylesheet">
+
+
+
+
+  <style>
+    /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+</head>
+
+
+<body>
+
+  <div class="container-fluid fixed-bottom bg-dmx text-white contact-footer text-center">
+    <div class="row">
+      <div class="col">
+        <small>
+          <span class="icon icon-phone"></span> <a class="text-white" href="tel:+23409097071511"> +234 (0) 909 707
+            1511</a>
+          </span>
+        </small>
+      </div>
+      <div class="col">
+        <small>
+          <span class="icon icon-mail"></span> <a class="text-white" href="mailto:info@dmxlogistics.ng">
+            info@dmxlogistics.ng</a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="stage-shelf stage-shelf-right text-white bg-dmx-dark hidden" id="sidebar">
+    <ul class="nav nav-bordered nav-stacked flex-column">
+      <li class="nav-header">bringing genius to logistics</li>
+      <li class="nav-item">
+        <a class="nav-link  text-white active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="#">Track A Delivery Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="#">Book A Delivery</a>
+      </li>
+      <li class="nav-divider"></li>
+      <li class="nav-header">Accounts</li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="profile/login/index.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="#">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="stage" id="stage">
+
+    <div class="block block-inverse block-fill-height app-header">
+
+      <div class="container-fluid fixed-top app-navbar">
+        <nav class="navbar sticky-top navbar-transparent navbar-toggleable-sm">
+          <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-target="#stage"
+            data-toggle="stage" data-distance="-250">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand mr-auto" href="">
+            <img id="logo" class="img-fluid" width="150" src="./assets/img/dmx-logo.jpg" alt="" srcset="">
+          </a>
+
+          <div class="hidden-sm-down">
+            <ul class="navbar-nav">
+              <li class="nav-item px-1 ">
+                <a class="nav-link" href="#"> <span class="icon icon-home"></span> Home</a>
+              </li>
+              <li class="nav-item px-1 ">
+                <a class="nav-link" href="#"> <span class="icon icon-list"></span> Track An Order</a>
+              </li>
+              <li class="nav-item px-1 ">
+                <a class="nav-link" href="#"> <span class="icon icon-home"></span> Book A Delivery</a>
+              </li>
+              <li class="nav-item px-1 ">
+                <a class="nav-link" href="profile/login/index.html"> <span class="icon icon-login"></span> Login</a>
+              </li>
+              <li class="nav-item px-1 ">
+                <a class="nav-link btn btn-success" href="#"> <span class="icon icon-add-user"></span> Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="pb-5 block-xs-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-lg-8">
+              <h1 class="block-titleData frequency">Delivery Man Xpress</h1>
+              <p class="lead mb-4 text-muted">A logistics company that offers last mile deliveries within Nigeria and
+                the rest of the world</p>
+              <div class="d-flex flex-column flex-md-row justify-content-around pr-5">
+                <a href="#">
+                  <button class="btn btn-primary btn-dmx btn-lg mb-3">Book a delivery</button>
+                </a>
+                <a href="#quote">
+                  <button class="btn btn-secondary btn-lg">Get a quote</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="track" class="container text-center pt-5 pb-5">
+      <div class="row">
+        <div class="col-sm-10 col-lg-8 offset-sm-1 offset-lg-2">
+          <h4 class="mb-4">
+            Track Your Delivery order<strong> Now!</strong>
+          </h4>
+          <div class="col-md-10 offset-md-1">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Your Order ID here">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary btn-dmx btn-dmx-inverse" type="button">Track Your ORDER</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="block block-bordered block-secondary app-block-marketing-grid">
+      <div class="container text-xs-center">
+
+        <div class="row mb-5">
+          <div class="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1">
+            <h6 class="text-muted text-uppercase mb-2">Why DMX</h6>
+            <h3>Fast and Reliable Delivery Services that meets your Timeline</h3>
+          </div>
+        </div>
+
+        <div class="row app-marketing-grid">
+          <div class="col-md-4 px-4 mb-5">
+            <span class="icon icon-rocket display-4"></span>
+            <p><strong>Fast and Tomely Delivery.</strong>
+              <br><br>With top notch transport services, and dedicated riders,
+              your
+              goods are delivered well on time when you need it.
+            </p>
+          </div>
+          <div class="col-md-4 px-4 mb-5">
+            <span class="icon icon-phone display-4"></span>
+            <p><strong>24/7 Support.</strong><br><br>Our dedicated customer service departments are always a call, text
+              or
+              email away and ready to attend to your enquiries or requests.</p>
+          </div>
+          <div class="col-md-4 px-4 mb-5">
+            <span class="icon icon-lock display-4"></span>
+            <p><strong>Package Protection</strong><br><br>We handle all parcels with care and all parcels are insured
+              and
+              secure before delivery is confirmed.</p>
+          </div>
+        </div>
+
+        <div class="row app-marketing-grid">
+          <div class="col-md-4 px-4 mb-5">
+            <span class="icon icon-light-bulb display-4"></span>
+            <p><strong>Innovative and Experienced Riders</strong><br><br>Lorem ipsum dolor sit amet consectetur
+              adipisicing
+              elit. Praesentium et facere doloremque iste natus, maiores odit earum totam fugiat a.</p>
+          </div>
+          <div class="col-md-4 px-4 mb-5">
+            <span class="icon icon-globe display-4"></span>
+            <p><strong>WorldWide Delivery.</strong><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nihil
+              explicabo dicta delectus magni quo magnam.</p>
+          </div>
+          <div class="col-md-4 px-4 mb-5">
+            <span class="icon icon-location display-4"></span>
+            <p><strong>Doorstep Delivery</strong><br><br>We will deliver to your doorstep, wherever you are in th
+              world!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="quote" class="block app-price-plans">
+      <div class="container text-center">
+
+        <div class="row mb-5">
+          <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <h6 class="text-white text-uppercase mb-2">Competitive Rates</h6>
+            <h3>Complete this form and find out how much we charge per kg.</h3>
+          </div>
+        </div>
+
+        <div class="row d-flex align-content-center flex-wrap">
+          <div class="col-md-4 px-4 pb-2 mb-3">
+            <div>
+              <h4>FROM</h4>
+              <form>
+                <div class="mb-3 input-group input-group-lg">
+                  <select class="form-control">
+                    <option>Nigeria</option>
+                  </select>
+                </div>
+                <div class="mb-3 input-group input-group-lg">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <div class="mb-3 input-group input-group-lg">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 px-4 pb-2 mb-3">
+            <div>
+              <h4>TO</h4>
+              <form">
+                <div class="mb-3 input-group input-group-lg">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <div class="mb-3 input-group input-group-lg">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select>
+                </div>
+                <div class="mb-3 input-group input-group-lg">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select>
+                </div>
+                </form>
+            </div>
+          </div>
+          <div class="col-md-4 px-4 pb-2 mb-3">
+            <div>
+              <h4>Parcel Details</h4>
+              <div class="mb-3 input-group input-group-lg">
+                <select class="form-control">
+                  <option>Category</option>
+                </select>
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <input type="number" placeholder="Weight" min="0" max="10" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-addon">Kg</span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-lg btn-block btn-primary btn-dmx btn-dmx-inverse">Get a quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="block block-inverse app-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mb-2">
+            <ul class="list-unstyled list-spaced">
+              <li class="mb-2">
+                <h6 class="text-uppercase">About</h6>
+              </li>
+              <li class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius libero natus, id sint
+                voluptatibus incidunt ut, ad esse iste nam? Ea dolore numquam error mollitia magni voluptates quae
+                earum?
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/tether.min.js"></script>
+  <script src="assets/js/toolkit.js"></script>
+  <script src="assets/js/application.js"></script>
+</body>
+
+</html>
